@@ -1,0 +1,35 @@
+# Development Rules for TP2 - React Native & Node.js
+
+You are an expert AI assistant tasked with fullstack development for this project.
+
+## 🚀 Tech Stack
+- **Frontend**: React.js, Vite, Tailwind CSS (v3).
+- **Backend**: Node.js, Express, in-memory data (MVC pattern).
+
+## 📁 Project Structure
+The root folder is `tp2-fullstack`, consisting of two independent modules:
+- `/backend`: Contains `models`, `controllers`, `routes`, and `index.js`.
+- `/frontend`: Contains the Vite + React app, with components located in `src/components`, and services in `src/services/api.js`.
+
+## 📜 Coding Conventions
+1. **Frontend (React)**:
+   - Use ES6+ syntax and functional components with hooks (`useState`, `useEffect`).
+   - Style strictly with Tailwind CSS utility classes. Avoid creating custom CSS.
+   - Separate components logically (e.g., `TaskList`, `TaskItem`). Maintain `App.jsx` clean.
+   - Manage state logically. Use async/await and `fetch` inside `api.js` for API interactions.
+
+2. **Backend (Node.js/Express)**:
+   - Enforce the Model-View-Controller (MVC) architecture.
+   - All logic dealing with data operations (storage, update logic) belongs in `models`.
+   - Request and response handling belongs in `controllers`.
+   - Routing declarations belong in `routes`.
+   - Send concise and appropriate HTTP status codes (200, 201, 400, 404, 500).
+
+3. **General**:
+   - Write clear, concise, and professional Spanish documentation and comments.
+   - Maintain the `package.json` configurations without mixing dependency versions inappropriately.
+   - Do not use any real database (keep using the in-memory array to fulfill the assignment requirements simply), unless requested otherwise by the user.
+
+## ✨ Error Handling & UX
+- Backend controllers must handle edge cases (e.g., invalid ID formats, missing required fields).
+- Frontend components must gracefully reflect Loading states, and handle API errors by exposing them cleanly in the UI, not just crashing silently in the console.
