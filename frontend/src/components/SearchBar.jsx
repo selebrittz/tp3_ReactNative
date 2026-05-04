@@ -1,10 +1,7 @@
-import { memo, useCallback } from 'react';
+import { memo, useCallback } from "react";
 
 const SearchBar = ({ searchTerm, onSearch }) => {
-  const handleChange = useCallback(
-    (e) => onSearch(e.target.value),
-    [onSearch],
-  );
+  const handleChange = useCallback((e) => onSearch(e.target.value), [onSearch]);
 
   return (
     <div className="relative w-full sm:max-w-xs">

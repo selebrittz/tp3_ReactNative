@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo } from "react";
 
 const BookItem = ({ book, currentUser, onEdit, onDelete }) => {
   // Solo se puede editar/borrar si el usuario actual es el dueño

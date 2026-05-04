@@ -89,5 +89,3 @@ const BookForm = ({ onSubmit, bookToEdit, onCancelEdit }) => {
     </form>
   );
 };
-
-
